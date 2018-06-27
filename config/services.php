@@ -37,7 +37,7 @@ return [
     'google' => [
         'client_id' => '818762209938-fm0f5pk2nvrluokjbun03tpls9iohnp7.apps.googleusercontent.com',      // Your Google Client ID
         'client_secret' => 'dBMgJwt2D4-dofHvR__6L_GW', // Your Google Client Secret
-        'redirect' => 'http://127.0.0.1:8000/login/google/callback',
+        'redirect' => 'https://lastsocialite.herokuapp.com/login/google/callback',
     ],
 
 ];
