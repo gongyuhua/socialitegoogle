@@ -44,18 +44,19 @@ class LoginController extends Controller
      */
     public function redirectToProvider()
     {
-        return Socialite::driver('facebook')->redirect();
+        return Socialite::driver('google') -> stateless() ->redirect();
     }
 
     /**
-     * Obtain the user information from Facebook.
+     * Obtain the user information from Google.
      *
      * @return \Illuminate\Http\Response
      */
     public function handleProviderCallback()
     {
-        $user = Socialite::driver('facebook')->user();
+        $user = Socialite::driver('google') -> stateless()->user();
 
-        $user->name;
+         return $user->name;
+
     }
 }

@@ -34,10 +34,10 @@ return [
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],
-    'facebook' => [
-        'client_id' => '1770715279683291',      // Your Facebook Client ID
-        'client_secret' => 'c897d67a38f2986df6318dc4ae43c9dd', // Your Facebook Client Secret
-        'redirect' => 'http://127.0.0.1/login/facebook/callback',
+    'google' => [
+        'client_id' => '818762209938-fm0f5pk2nvrluokjbun03tpls9iohnp7.apps.googleusercontent.com',      // Your Google Client ID
+        'client_secret' => 'dBMgJwt2D4-dofHvR__6L_GW', // Your Google Client Secret
+        'redirect' => 'http://127.0.0.1:8000/login/google/callback',
     ],
 
 ];
